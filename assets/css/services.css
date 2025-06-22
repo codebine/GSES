@@ -26,7 +26,7 @@
     display: block;
     width: 50px;
     height: 3px;
-    background-color: #dc3545;
+    background-color: #6a9ce7;
     /* Red line */
     margin-top: 10px;
   }
@@ -47,8 +47,10 @@
   }
 
   .side-navigation .list-group-item:hover {
-    background-color: #e9ecef;
-    color: #007bff;
+    background-color: #e9ecef !important;
+        color: #6a9ce7 !important;
+            font-weight: 600 !important;
+            border: 2px solid !important;
     cursor: pointer;
   }
 
@@ -86,7 +88,7 @@
   .feature-list li::before {
     content: '\2022';
     /* Bullet point */
-    color: #dc3545;
+    color: #6a9ce7;
     /* Red color for bullet */
     font-weight: bold;
     display: inline-block;
@@ -166,4 +168,52 @@
     grid-template-columns: 1fr;
   }
 }
+.list-group-item.active {
+    z-index: 2;
+    background-color: #6a9ce7 !important;
+    color: #000 !important;
+}
 
+
+.floating-brochure {
+    position: fixed;
+    top: 50%; /* Adjust as needed to position vertically */
+    right: 0;
+    transform: translateY(-50%); /* Centers the element vertically */
+    background-color: #6a9ce7; /* Red color, similar to the image */
+    color: #000;
+    padding: 10px 15px; /* Adjust padding as needed */
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-rl; /* Makes the text vertical */
+    text-orientation: mixed; /* Keeps characters upright, or `upright` for all vertical */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+    z-index: 1030; /* Higher than Bootstrap's default z-index for fixed elements if needed */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.floating-brochure:hover {
+    background-color: #6a9ce7; /* Darker red on hover */
+    color: #000; /* Keep text white on hover */
+}
+
+.brochure-icon {
+    margin-bottom: 5px; /* Space between icon and text */
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+.brochure-text {
+    white-space: nowrap; /* Prevents text from wrapping if writing-mode is not applied correctly */
+}
+
+/* For better responsiveness on smaller screens, you might adjust the positioning or hide it */
+@media (max-width: 768px) {
+    .floating-brochure {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
