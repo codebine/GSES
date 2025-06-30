@@ -709,11 +709,37 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+       <div class="container form-container shadow p-4 bg-white rounded">
+    <div class="form-title">Download Brochure</div>
+    <div class="form-subtitle">Fill your details to <br>download the Brochure</div>
+
+    <form>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Enter Name">
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+      <div class="mb-3 input-group">
+        <span class="input-group-text">
+          <img src="https://flagcdn.com/in.svg" width="20" alt="India Flag">&nbsp;+91
+        </span>
+        <input type="tel" class="form-control" placeholder="Phone Number">
+      </div>
+
+      <div class="mb-3">
+        <button type="button" class="btn btn-primary btn-otp">Send OTP</button>
+      </div>
+
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Enter OTP Code">
+      </div>
+
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="E-mail">
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+    </form>
+  </div>
       </div>
     </div>
   </div>

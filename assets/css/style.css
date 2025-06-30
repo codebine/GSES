@@ -1840,3 +1840,33 @@ section {
         font-size: 12px;
     }
 }
+
+  .form-container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .form-title {
+      font-size: 1.2rem;
+      color: #F15A24;
+      font-weight: 600;
+    }
+
+    .form-subtitle {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #002147;
+      border-left: 3px solid #002147;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .btn-otp, .btn-submit {
+      width: 100%;
+    }
+
+    .form-control:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+    }
