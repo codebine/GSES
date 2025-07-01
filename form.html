@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .form-control[disabled],
+        .form-select[disabled] {
+            background-color: #e9ecef;
+        }
+
+        #details-section {
+            display: none;
+            margin-top: 40px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+
+            <h1 class="logo me-auto me-lg-0"><a href="index.html">NCESPL<span>.</span></a></h1>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="About.html">About</a></li>
+                    <li><a class="nav-link scrollto" href="Products.html">Products</a></li>
+                    <li><a class="nav-link scrollto" href="Services.html">Services</a></li>
+                    <li><a class="nav-link scrollto " href="Blog.html">Blog</a></li>
+                    <li><a class="nav-link scrollto " href="Projects.html">Projects</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+                    <li><a class="nav-link scrollto" href="Contact.html">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            <!-- <a href="#contact" class="get-started-btn scrollto">Get Started</a> -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero-1" class="d-flex align-items-center justify-content-center">
+        <div class="container" data-aos="fade-up">
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-xl-6 col-lg-8">
+                    <h1>Products</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center my-4">
+                            <li class="breadcrumb-item"><a href="#" class="text-light">Home</a></li>
+                            <li class="breadcrumb-item active text-light" aria-current="page">Products</li>
+                        </ol>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Size a Lead-Acid Battery to Your Forklift</h2>
+                <p class="text-muted">Select forklift specifications to get your battery configuration.</p>
+            </div>
+
+            <form id="battery-form">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label">Manufacturer</label>
+                        <select id="manufacturer" class="form-select" required>
+                            <option value="">Select</option>
+                            <option>AUTOGUIDE</option>
+                            <option>CLARK</option>
+                            <option>TOYOTA</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Model</label>
+                        <select id="model" class="form-select" disabled required>
+                            <option value="">Select Manufacturer First</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Voltage</label>
+                        <select id="voltage" class="form-select" disabled required>
+                            <option value="">Select Model First</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Compartment Size</label>
+                        <select id="compartment" class="form-select" disabled required>
+                            <option value="">Select Voltage First</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Batteries</label>
+                        <select id="batteries" class="form-select" disabled required>
+                            <option value="">Select Compartment First</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="details-section">
+                    <div class="row g-3 mt-4">
+                        <div class="col-md-4">
+                            <label class="form-label">Weight Min</label>
+                            <input class="form-control" placeholder="Weight Min" value="810">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Weight Max</label>
+                            <input class="form-control" placeholder="Weight Max" value="N/A">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Cover</label>
+                            <input class="form-control" placeholder="Cover" value="Yes">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Position</label>
+                            <input class="form-control" placeholder="Position" value="N/A">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Lead</label>
+                            <input class="form-control" placeholder="Lead" value="N/A">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Connector Part Number</label>
+                            <input class="form-control" placeholder="Connector Part Number" value="N/A">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Connector Description</label>
+                            <input class="form-control" placeholder="Connector Description" value="N/A">
+                        </div>
+                        <div class="col-md-8">
+                            <label class="form-label">Design Specs</label>
+                            <textarea class="form-control" placeholder="Design Specs"
+                                rows="3">Dome cover; optional PAC 12-510-201-B battery / charger 12-085-13 upgrade available</textarea>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Tray</label>
+                            <input class="form-control" placeholder="BBI Tray" value="201-B">
+                        </div>
+                        <div class="col-md-4"><input class="form-control" placeholder="Approximate Service Weight"
+                                value="1040"></div>
+                        <div class="col-md-4">
+                            <label class="form-label">AH Capacity</label>
+                            <input class="form-control" placeholder="AH Capacity" value="510">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">KWH</label>
+                            <input class="form-control" placeholder="KWH" value="11.812">
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary">Request Quote</button>
+                        <!-- <button type="button" class="btn btn-secondary ms-2">View Details</button> -->
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+
+    </main><!-- End #main -->
+    <script>
+        const manufacturerData = {
+            'AUTOGUIDE': ['AGP-40C', 'AGP-40T'],
+            'CLARK': ['CLK-200', 'CLK-250'],
+            'TOYOTA': ['TYT-120', 'TYT-130']
+        };
+
+        const modelData = {
+            'AGP-40C': ['24V', '36V'],
+            'AGP-40T': ['36V'],
+            'CLK-200': ['24V'],
+            'CLK-250': ['48V'],
+            'TYT-120': ['24V', '48V'],
+            'TYT-130': ['36V']
+        };
+
+        const voltageData = {
+            '24V': ['Small', 'Medium'],
+            '36V': ['Medium'],
+            '48V': ['Large']
+        };
+
+        const compartmentData = {
+            'Small': ['Battery A'],
+            'Medium': ['Battery B'],
+            'Large': ['Battery C']
+        };
+
+        const manufacturer = document.getElementById('manufacturer');
+        const model = document.getElementById('model');
+        const voltage = document.getElementById('voltage');
+        const compartment = document.getElementById('compartment');
+        const batteries = document.getElementById('batteries');
+        const detailsSection = document.getElementById('details-section');
+
+        manufacturer.addEventListener('change', () => {
+            model.innerHTML = '<option value="">Select</option>';
+            voltage.innerHTML = '<option value="">Select Model First</option>';
+            compartment.innerHTML = '<option value="">Select Voltage First</option>';
+            batteries.innerHTML = '<option value="">Select Compartment First</option>';
+            model.disabled = true;
+            voltage.disabled = true;
+            compartment.disabled = true;
+            batteries.disabled = true;
+            detailsSection.style.display = 'none';
+
+            const selected = manufacturer.value;
+            if (manufacturerData[selected]) {
+                manufacturerData[selected].forEach(m => {
+                    model.innerHTML += `<option value="${m}">${m}</option>`;
+                });
+                model.disabled = false;
+            }
+        });
+
+        model.addEventListener('change', () => {
+            voltage.innerHTML = '<option value="">Select</option>';
+            compartment.innerHTML = '<option value="">Select Voltage First</option>';
+            batteries.innerHTML = '<option value="">Select Compartment First</option>';
+            voltage.disabled = true;
+            compartment.disabled = true;
+            batteries.disabled = true;
+            detailsSection.style.display = 'none';
+
+            const selected = model.value;
+            if (modelData[selected]) {
+                modelData[selected].forEach(v => {
+                    voltage.innerHTML += `<option value="${v}">${v}</option>`;
+                });
+                voltage.disabled = false;
+            }
+        });
+
+        voltage.addEventListener('change', () => {
+            compartment.innerHTML = '<option value="">Select</option>';
+            batteries.innerHTML = '<option value="">Select Compartment First</option>';
+            compartment.disabled = true;
+            batteries.disabled = true;
+            detailsSection.style.display = 'none';
+
+            const selected = voltage.value;
+            if (voltageData[selected]) {
+                voltageData[selected].forEach(c => {
+                    compartment.innerHTML += `<option value="${c}">${c}</option>`;
+                });
+                compartment.disabled = false;
+            }
+        });
+
+        compartment.addEventListener('change', () => {
+            batteries.innerHTML = '<option value="">Select</option>';
+            batteries.disabled = true;
+            detailsSection.style.display = 'none';
+
+            const selected = compartment.value;
+            if (compartmentData[selected]) {
+                compartmentData[selected].forEach(b => {
+                    batteries.innerHTML += `<option value="${b}">${b}</option>`;
+                });
+                batteries.disabled = false;
+            }
+        });
+
+        batteries.addEventListener('change', () => {
+            if (batteries.value !== '') {
+                detailsSection.style.display = 'block';
+            } else {
+                detailsSection.style.display = 'none';
+            }
+        });
+
+        document.getElementById('battery-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            window.location.href = "/login.html";
+        });
+    </script>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <h3>NCESPL<span>.</span></h3>
+                            <p>
+                                Plot No. 378, 10th Cross, <br>
+                                Industrial Area,<br>
+                                Phase-IV, Nellore- 560058.<br>
+                                <strong>Phone:</strong> 080 - 43748343<br>
+                                <strong>Email:</strong> support.ncespl@gmail.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>2017 - 2022 Nagachaitra Engineering Services</span></strong>. All Rights
+                Reserved
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
