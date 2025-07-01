@@ -1,0 +1,51 @@
+ 
+
+  #header .container {
+    /* Ensure vertical alignment of items in the header */
+    align-items: center;
+    /* This will push logo to left and nav to right */
+    justify-content: space-between;
+    min-height: 70px; /* Ensure enough height for content */
+  }
+
+  #header img {
+    /* Your existing styles */
+    max-height: 60px;
+    height: auto;
+    width: auto;
+    display: block; /* Ensures proper rendering */
+    vertical-align: middle; /* Helps with vertical alignment */
+
+    /* --- IMPORTANT: LOGO VISIBILITY FIX --- */
+    /* Option 1: Invert colors (often makes dark logos white) */
+    filter: invert(1) brightness(1.5); /* Inverts colors and makes it a bit brighter */
+    /* Option 2: Increase brightness (if logo is just too dark, not necessarily black) */
+    /* filter: brightness(2); */ /* Adjust the value (e.g., 1.5 for 150% brightness, 2 for 200%) */
+    /* Option 3: Apply a sepia tone and brightness (can give an aged look) */
+    /* filter: sepia(1) brightness(2); */
+    /* Option 4: Drop shadow (can help separate it from background if color is similar) */
+    /* filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7)); */
+  }
+
+  /* Ensure navbar links are also visible if they are dark */
+  #navbar .nav-link {
+    color: #ffffff; /* Make navigation links white for better contrast */
+    transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+  }
+
+  #navbar .nav-link:hover,
+  #navbar .nav-link.active {
+    color: #6a9ce7; /* Example hover/active color (gold) */
+  }
+
+  /* Mobile navigation toggle icon visibility */
+  .mobile-nav-toggle {
+    color: #ffffff; /* Make the mobile toggle icon white */
+  }
+
+  /* General reset for navbar padding/margin to ensure tight alignment */
+  #navbar,
+  #navbar ul {
+    padding: 0;
+    margin: 0;
+  }
