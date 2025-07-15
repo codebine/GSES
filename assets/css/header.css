@@ -18,7 +18,7 @@
 
     /* --- IMPORTANT: LOGO VISIBILITY FIX --- */
     /* Option 1: Invert colors (often makes dark logos white) */
-    filter: invert(1) brightness(1.5); /* Inverts colors and makes it a bit brighter */
+    /* filter: invert(1) brightness(1.5); Inverts colors and makes it a bit brighter */
     /* Option 2: Increase brightness (if logo is just too dark, not necessarily black) */
     /* filter: brightness(2); */ /* Adjust the value (e.g., 1.5 for 150% brightness, 2 for 200%) */
     /* Option 3: Apply a sepia tone and brightness (can give an aged look) */
